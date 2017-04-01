@@ -13,10 +13,10 @@ contract FoolsTokenTest is DSTest {
     }
 
     function testIncreaseSupply() {
-        assertEq(token.totalSupply(), 100);
+        assertEq(token.totalSupply(), 100000000000000000000);
         token.bonk();
-        assertEq(token.totalSupply(), 101);
+        assertEq(token.totalSupply(), 101000000000000000000);
         token.bonk();
-        assertEq(token.totalSupply(), 102);
+        assertEq(token.totalSupply(), 102010000000000000000);
     }
 }
