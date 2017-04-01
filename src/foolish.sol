@@ -7,8 +7,8 @@ contract FoolsToken is DSToken {
 
     function FoolsToken(string name_, string symbol_, uint decimals_) 
         DSToken(name_, symbol_, decimals_) {
-            _balances[msg.sender] = 100;
-            _supply = 100;
+            _balances[msg.sender] = 100000000000000000000;
+            _supply = 100000000000000000000;
     } 
 
     function bonk() {
